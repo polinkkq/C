@@ -38,10 +38,13 @@ void ar_print(int *ar, int n) {
 }
 void ar_prog(int *ar, int n) {
 	int d;
+	int a;
 	printf("\nВведите D:");
 	scanf("%d", &d);
+	printf("\nВведите A:");
+	scanf("%d", &a);
 	for (int i = 0; i < n; i++) {
-		ar[i] += i * d;
+		ar[i] = a + i * d;
 	}
 }
 
