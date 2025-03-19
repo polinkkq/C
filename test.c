@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <locale.h>
 #define AR_LEN 1000
 //Array3. Дано целое число N (> 1), а также первый член A и разность D 
 //арифметической прогрессии. Сформировать и вывести массив размера N, 
@@ -12,6 +13,7 @@ void ar_prog(int *ar, int n);
 void ar_swap(int *ar, int n);
 void ar_reverse(int *ar, int n);
 int main() {
+	setlocale(LC_ALL, "Rus");
 	int ar[AR_LEN];
 	int n;
 	ar_input(ar, &n);
